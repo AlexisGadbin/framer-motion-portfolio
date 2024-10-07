@@ -8,8 +8,11 @@ import Image from "next/image";
 
 export const HeroSection = () => {
   return (
-    <section className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip">
-      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
+    <section
+      className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip"
+      id="home"
+    >
+      <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] pointer-events-none">
         <div
           className="absolute inset-0 -z-30 opacity-5"
           style={{
@@ -96,20 +99,24 @@ export const HeroSection = () => {
           </p>
         </div>
         <div className="flex flex-col items-center mt-8 gap-4 md:flex-row justify-center">
-          <button
-            type="button"
-            className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
-          >
-            <span className="font-semibold">Explore My Work</span>
-            <ArrowDown className="size-4" />
-          </button>
-          <button
-            type="button"
-            className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
-          >
-            <span>👋</span>
-            <span className="font-semibold">Let&apos;s Connect</span>
-          </button>
+          <a href="#projects">
+            <button
+              type="button"
+              className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl"
+            >
+              <span className="font-semibold">Explore My Work</span>
+              <ArrowDown className="size-4" />
+            </button>
+          </a>
+          <a href="#contact">
+            <button
+              type="button"
+              className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl"
+            >
+              <span>👋</span>
+              <span className="font-semibold">Let&apos;s Connect</span>
+            </button>
+          </a>
         </div>
       </div>
     </section>

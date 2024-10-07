@@ -93,7 +93,7 @@ export const AboutSection = () => {
   const constraintRef = useRef(null);
 
   return (
-    <section className="py-20 lg:py-28">
+    <section className="py-20 lg:py-28" id="about">
       <div className="container">
         <SectionHeader
           title="A Glimpse Into My World"
